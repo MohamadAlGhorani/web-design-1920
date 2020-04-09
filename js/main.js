@@ -1,1 +1,1 @@
-document.querySelector("ul li:last-of-type").scrollTo()
+document.querySelector("ul li:last-of-type").scrollIntoView();

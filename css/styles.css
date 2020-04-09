@@ -32,7 +32,7 @@ main ul {
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   display: flex;
-  flex-flow: column-reverse;
+  flex-flow: column;
 }
 
 main section {
