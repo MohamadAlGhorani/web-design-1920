@@ -16,6 +16,7 @@ Het idee is dat ik de interviewer en de gast altijd laten staan in het beeld en 
 
 ## First meeting 
 Voordat de meeting is gebeurt heb ik een paar vragen voorbereid zodat ik Marie meer kan leren kennen en zodat ik personlijke app voor haar kan ontwerpen. Marie is een visual designer. Daarom moet het app goed uitzien zodat ze ervan kan genieten.
+De meeting is op bongu gebeurt in de vertiual classroom. Het ging wel goed marie heeft twee tolks die ons ontzettend hebben geholpen. Meetingen op afstand zijn niet echt mijn ding maar het kan nu niet anders.
 
 De vragen:
 
@@ -49,6 +50,32 @@ Wat vind je een handige app?
 Nadat ik marie mijn eerste idee heb laten zien. Vond ze het leuk idee maar haar feedback was dat ik moet focusen op de belangrijkse dingen. Want ik heb haar verteld dat ik misschien wil ik een background animatie wil toevoegen om de background muziek te vervangen van de podcast maar ze zei dat het misschien te veel gaat worden.
 Daarom heb ik bsloten om dat weg te laten omdat het niet de kern is van een podcast.
 Daarnaast heeft ze een feedback gegeven over de emoties die met emojies worden uitgedrukt dat ik moet opleten op de timing van de emojies en de zinnen die erbij zijn gezegd zodat Marie weet op wat een persoon lacht. Dus ik ga ervoor zorgen dat de emojies op de goede timing lopen met de tekst of ik de emojies in de tekst zelf ga plaatsen. 
+
+## Second meeting
+
+Voor dat de meeting plaats vindt in de vertiual classroom zoals de eerste meeting, heb ik een paar vragen voorbereidt die ik relevant vind voor mijn concept. Daarnaast heb ik een prototype met html, css en js klaar gemaakt zodat Marie het kan testen op haar laptop.
+
+Ik heb tijdens de test een link gestuurd naar Marie van de prototype zodat Marie het kan testen. Daarnaast heeft Marie me gevraagd om mij  scherm ook te delen zodat andere ook mee kunnen kijken en dat heb ik gedaan.
+
+screenshot hier van de prototype
+
+De vragen die ik gesteld heb zijn de volgende:
+
+Wat vind je van de snelheid van het verschijnen van elke zin?
+- Marie zei dat ze het prima vindt qua tempo.
+
+Wat vind je fijner om te lezen de hele zin laten verschijnen of woord per woord?
+- Marie heeft geen voorkeur als het maar goed ontworpen is.
+
+Wat vind je van het gebruik maken van de emoties in de zinnen met emojies?
+- Marie vindt de emojies goed zijn omdat ze in de context plaats vinden.
+
+### Feedback from Marie about the prototype
+
+Marie vindt de timing van het verschijnen van de punten boven de foto van de peronages niet helemaal goed klopt. ze denkt dat er nog een tekst zou moeten komen omdat de punten nog bij de foto staan. Misschien dat je daar wat meer mee kan doen (een andere vorm). Bijvoorbeeld implementeren in gezichten. Daarom ga ik deze issue nog even verbeteren zodat Marie niet verdwaalt wordt. 
+
+Marie was blij met mij prototype. Daarnaast was ze blij dat ik aan haar veel controle geef door veel dingen aanpasbaar te maken in de prototype zoals de plek waar de tekst komt de layout.
+Daarnaast wil Marie graag een mobiel versie en dat ga ik zeker doen.
 
 
 
