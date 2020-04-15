@@ -38,6 +38,8 @@ button.addEventListener("click", function () {
                 messagesArray.forEach(item => {
                     item.classList.remove("show")
                 })
+                ballsContGast.classList.remove("show-balls")
+                ballsContInter.classList.remove("show-balls")
                 count = 0
             } else {
                 count++
