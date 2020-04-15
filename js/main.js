@@ -2,7 +2,8 @@ const balls = document.querySelectorAll(".ball")
 const ballsArray = Array.from(balls)
 const ballsGast = document.querySelectorAll(".ball-gast")
 const ballsArrayGast = Array.from(ballsGast)
-const button = document.querySelector("button")
+const button = document.querySelector(".start")
+const layoutBtn = document.querySelector(".layout")
 const messages = document.querySelectorAll("li")
 const ballsContGast = document.querySelector(".balls-cont-gast")
 const ballsContInter = document.querySelector(".balls-cont")
@@ -13,6 +14,12 @@ var count = 0;
 
 var val;
 var balVal;
+
+layoutBtn.addEventListener("click", function () {
+    Array.from(messages).forEach(item => {
+        item.classList.toggle("uitlijnen")
+    })
+})
 
 button.addEventListener("click", function () {
     if (button.innerText == "Stop") {
