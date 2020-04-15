@@ -16,6 +16,8 @@ var val;
 var balVal;
 
 layoutBtn.addEventListener("click", function () {
+    layoutBtn.classList.toggle("aan")
+    layoutBtn.classList.toggle("layout")
     Array.from(messages).forEach(item => {
         item.classList.toggle("uitlijnen")
     })
