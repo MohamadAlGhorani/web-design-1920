@@ -14,9 +14,8 @@ let count = 0;
 let delayArrayIndex = 0;
 
 let val;
-let balVal;
+let ballVal;
 var delay = 3000;
-// localStorage.setItem("delay", delay)
 
 layoutBtn.addEventListener("click", function () {
     layoutBtn.classList.toggle("aan")
@@ -27,25 +26,25 @@ layoutBtn.addEventListener("click", function () {
 })
 
 ballsContGast.addEventListener('click', function () {
-    if (count == messagesArray.length - 1) {
+    var delayArray = messagesArray.map(item => {
+        return item.textContent.split(" ").length * 200
+    })
+    clearInterval(val)
+    startInterval(delayArray[delayArrayIndex]);
+    if (delayArrayIndex == messagesArray.length - 1) {
         delayArrayIndex = 0
+        clearInterval(val)
     } else {
         delayArrayIndex++
     }
-    console.log(delayArrayIndex)
+    console.log(delayArray[delayArrayIndex])
 })
-button.addEventListener("click", function (delay) {
-    // const words = messagesArray[count].textContent.split(" ").length;
-    // console.log(words)
+
+button.addEventListener("click", function () {
     if (count == 0) {
         messagesArray.forEach(item => {
             item.classList.remove("show")
         })
-        var delayArray = messagesArray.map(item => {
-            return item.textContent.split(" ").length * 200
-        })
-        console.log(delayArray)
-        var delay = delayArray[count]
     }
     if (messagesArray[count].classList.contains("interviewer")) {
         ballsContGast.classList.remove("show-balls")
@@ -60,39 +59,7 @@ button.addEventListener("click", function (delay) {
     }, 3000);
     if (button.innerText == "Begin") {
         button.innerText = "Stop"
-        val = setInterval(() => {
-            const words = messagesArray[count].textContent.split(" ").length;
-            delay = Number(words * 200)
-            // localStorage.setItem("delay", delay)
-            console.log(delay)
-            if (messagesArray[count].classList.contains("interviewer")) {
-                messagesArray[count].classList.add("show")
-                messagesArray[count].scrollIntoView();
-            } else if (messagesArray[count].classList.contains("gast")) {
-                messagesArray[count].classList.add("show")
-                messagesArray[count].scrollIntoView();
-            }
-            if (messagesArray[count].nextElementSibling) {
-                if (messagesArray[count].nextElementSibling.classList.contains("interviewer")) {
-                    ballsContGast.classList.remove("show-balls")
-                    ballsContInter.classList.add("show-balls")
-                } else if (messagesArray[count].nextElementSibling.classList.contains("gast")) {
-                    ballsContInter.classList.remove("show-balls")
-                    ballsContGast.classList.add("show-balls")
-                }
-            }
-            if (count == messagesArray.length - 1) {
-                ballsContGast.classList.remove("show-balls")
-                ballsContInter.classList.remove("show-balls")
-                clearInterval(val)
-                count = 0
-                button.innerText = "Begin"
-            } else {
-                count++
-            }
-            // ballsContGast.click()
-        }, 3000);
-
+        startInterval(delay)
     } else if (button.innerText == "Stop") {
         button.innerText = "Begin"
         clearInterval(val)
@@ -102,7 +69,7 @@ button.addEventListener("click", function (delay) {
 })
 
 function jumping(ballsArray) {
-    balVal = setInterval(() => {
+    ballVal = setInterval(() => {
         if (ballsArray[i]) {
             ballsArray[i].classList.add("jump")
             if (i == ballsArray.length - 1) {
@@ -131,3 +98,34 @@ window.addEventListener('resize', () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
+
+function startInterval(interval) {
+    val = setInterval(() => {
+        if (messagesArray[count].classList.contains("interviewer")) {
+            messagesArray[count].classList.add("show")
+            messagesArray[count].scrollIntoView();
+        } else if (messagesArray[count].classList.contains("gast")) {
+            messagesArray[count].classList.add("show")
+            messagesArray[count].scrollIntoView();
+        }
+        if (messagesArray[count].nextElementSibling) {
+            if (messagesArray[count].nextElementSibling.classList.contains("interviewer")) {
+                ballsContGast.classList.remove("show-balls")
+                ballsContInter.classList.add("show-balls")
+            } else if (messagesArray[count].nextElementSibling.classList.contains("gast")) {
+                ballsContInter.classList.remove("show-balls")
+                ballsContGast.classList.add("show-balls")
+            }
+        }
+        if (count == messagesArray.length - 1) {
+            ballsContGast.classList.remove("show-balls")
+            ballsContInter.classList.remove("show-balls")
+            clearInterval(val)
+            count = 0
+            button.innerText = "Begin"
+        } else {
+            count++
+        }
+        ballsContGast.click()
+    }, interval);
+}
