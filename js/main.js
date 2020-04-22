@@ -50,12 +50,14 @@ button.addEventListener("click", function () {
                 messagesArray[count].classList.add("show")
                 messagesArray[count].scrollIntoView();
             }
-            if (messagesArray[count].nextElementSibling.classList.contains("interviewer")) {
-                ballsContGast.classList.remove("show-balls")
-                ballsContInter.classList.add("show-balls")
-            } else if (messagesArray[count].nextElementSibling.classList.contains("gast")) {
-                ballsContInter.classList.remove("show-balls")
-                ballsContGast.classList.add("show-balls")
+            if (messagesArray[count].nextElementSibling) {
+                if (messagesArray[count].nextElementSibling.classList.contains("interviewer")) {
+                    ballsContGast.classList.remove("show-balls")
+                    ballsContInter.classList.add("show-balls")
+                } else if (messagesArray[count].nextElementSibling.classList.contains("gast")) {
+                    ballsContInter.classList.remove("show-balls")
+                    ballsContGast.classList.add("show-balls")
+                }
             }
             if (count == messagesArray.length - 1) {
                 ballsContGast.classList.remove("show-balls")
