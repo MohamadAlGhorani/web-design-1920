@@ -20,8 +20,11 @@ Het idee is dat ik de interviewer en de gast altijd laten staan in het beeld en 
 
 ## Installation
 1 - Clone this repo or download it on your device.
+
 2 - Open the repo with your code editer.
+
 3 - Open the index.html with the live view of your code editer.
+
 
 ## LICENSE
 License is [MIT](https://github.com/MohamadAlGhorani/web-design-1920/blob/master/LICENSE)
