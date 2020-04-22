@@ -17,3 +17,8 @@ Het idee is dat ik de interviewer en de gast altijd laten staan in het beeld en 
 ## [First meeting](https://github.com/MohamadAlGhorani/web-design-1920/wiki/First-meeting) 
 ## [Second meeting](https://github.com/MohamadAlGhorani/web-design-1920/wiki/Second-meeting)
 ## [Last meeting](https://github.com/MohamadAlGhorani/web-design-1920/wiki/Last-meeting)
+
+## Installiation
+
+## LICENSE
+License is [MIT](https://github.com/MohamadAlGhorani/web-design-1920/blob/master/LICENSE)
