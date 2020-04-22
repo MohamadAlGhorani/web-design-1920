@@ -18,7 +18,10 @@ Het idee is dat ik de interviewer en de gast altijd laten staan in het beeld en 
 ## [Second meeting](https://github.com/MohamadAlGhorani/web-design-1920/wiki/Second-meeting)
 ## [Last meeting](https://github.com/MohamadAlGhorani/web-design-1920/wiki/Last-meeting)
 
-## Installiation
+## Installation
+1 - Clone this repo or download it on your device.
+2 - Open the repo with your code editer.
+3 - Open the index.html with the live view of your code editer.
 
 ## LICENSE
 License is [MIT](https://github.com/MohamadAlGhorani/web-design-1920/blob/master/LICENSE)
