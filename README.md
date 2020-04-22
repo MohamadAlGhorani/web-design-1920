@@ -16,3 +16,17 @@ Het idee is dat ik de interviewer en de gast altijd laten staan in het beeld en 
 
 ## [First meeting](https://github.com/MohamadAlGhorani/web-design-1920/wiki/First-meeting) 
 ## [Second meeting](https://github.com/MohamadAlGhorani/web-design-1920/wiki/Second-meeting)
+## [Last meeting](https://github.com/MohamadAlGhorani/web-design-1920/wiki/Last-meeting)
+
+## Installation
+1 - Clone this repo or download it on your device.
+
+2 - Open the repo with your code editer.
+
+3 - Open the index.html with the live view of your code editer.
+
+## Podcast resource
+[Podcast the futur](https://thefutur.com/podcast/075-deep-dive-vulnerability-human-connection)
+
+## LICENSE
+License is [MIT](https://github.com/MohamadAlGhorani/web-design-1920/blob/master/LICENSE)
