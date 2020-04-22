@@ -261,6 +261,7 @@ main section>div>div:last-of-type {
     padding-right: 10px;
     margin-top: 0;
     height: 60vh;
+    height: calc(var(--vh, 1vh) * 60);
     overflow-y: auto;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
@@ -273,6 +274,7 @@ main section>div>div:last-of-type {
     display: flex;
     justify-content: space-between;
     height: 25vh;
+    height: calc(var(--vh, 1vh) * 25);
     margin-right: 0;
     margin-left: 0;
   }
