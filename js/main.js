@@ -9,11 +9,11 @@ const ballsContGast = document.querySelector(".balls-cont-gast")
 const ballsContInter = document.querySelector(".balls-cont")
 const messagesArray = Array.from(messages)
 
-var i = 0;
-var count = 0;
+let i = 0;
+let count = 0;
 
-var val;
-var balVal;
+let val;
+let balVal;
 
 layoutBtn.addEventListener("click", function () {
     layoutBtn.classList.toggle("aan")
@@ -24,24 +24,30 @@ layoutBtn.addEventListener("click", function () {
 })
 
 button.addEventListener("click", function () {
-    if (button.innerText == "Stop") {
-        button.innerText = "Begin"
-        clearInterval(val)
+    if (messagesArray[count].classList.contains("interviewer")) {
         ballsContGast.classList.remove("show-balls")
+        ballsContInter.classList.add("show-balls")
+    } else if (messagesArray[count].classList.contains("gast")) {
         ballsContInter.classList.remove("show-balls")
-    } else {
+        ballsContGast.classList.add("show-balls")
+    }
+    setTimeout(() => {
+        ballsContInter.classList.remove("show-balls")
+        ballsContGast.classList.remove("show-balls")
+    }, 3000);
+    if (button.innerText == "Begin") {
         button.innerText = "Stop"
         val = setInterval(() => {
             if (messagesArray[count].classList.contains("interviewer")) {
-                messagesArray[count].classList.add("show")
-                messagesArray[count].scrollIntoView();
-                ballsContInter.classList.add("show-balls")
-                ballsContGast.classList.remove("show-balls")
-            } else if (messagesArray[count].classList.contains("gast")) {
-                messagesArray[count].classList.add("show")
-                messagesArray[count].scrollIntoView();
                 ballsContGast.classList.add("show-balls")
                 ballsContInter.classList.remove("show-balls")
+                messagesArray[count].classList.add("show")
+                messagesArray[count].scrollIntoView();
+            } else if (messagesArray[count].classList.contains("gast")) {
+                ballsContInter.classList.add("show-balls")
+                ballsContGast.classList.remove("show-balls")
+                messagesArray[count].classList.add("show")
+                messagesArray[count].scrollIntoView();
             }
             if (count == messagesArray.length - 1) {
                 messagesArray.forEach(item => {
@@ -54,6 +60,11 @@ button.addEventListener("click", function () {
                 count++
             }
         }, 3000);
+    } else if (button.innerText == "Stop") {
+        button.innerText = "Begin"
+        clearInterval(val)
+        ballsContGast.classList.remove("show-balls")
+        ballsContInter.classList.remove("show-balls")
     }
 })
 
