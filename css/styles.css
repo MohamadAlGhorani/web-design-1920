@@ -240,6 +240,7 @@ main section>div>div:last-of-type {
 @media(max-width:769px) {
   body {
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     margin: 0;
     padding: 0;
     background-image: url(../img/purple-ikat-stripes-seamless-background-orange-vector-11927005.jpg);

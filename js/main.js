@@ -88,3 +88,9 @@ function jumping(ballsArray) {
 
 jumping(ballsArray)
 jumping(ballsArrayGast)
+
+
+window.addEventListener('resize', () => {
+    let vh = window.innerHeight * 0.01;
+    document.querySelector("body").style.setProperty('--vh', `${vh}px`);
+});
