@@ -25,6 +25,8 @@ Het idee is dat ik de interviewer en de gast altijd laten staan in het beeld en 
 
 3 - Open the index.html with the live view of your code editer.
 
+## Podcast resource
+[Podcast the futur](https://thefutur.com/podcast/075-deep-dive-vulnerability-human-connection)
 
 ## LICENSE
 License is [MIT](https://github.com/MohamadAlGhorani/web-design-1920/blob/master/LICENSE)
