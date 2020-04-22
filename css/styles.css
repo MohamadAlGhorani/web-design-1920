@@ -130,7 +130,7 @@ main ul {
   padding-left: 135px;
   padding-right: 120px;
   margin-top: 0;
-  height: 180px;
+  height: 300px;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
@@ -165,6 +165,7 @@ main section>div>div:last-of-type {
   height: 100px;
   border-radius: 50%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .gast-img-holder {
@@ -173,6 +174,10 @@ main section>div>div:last-of-type {
 
 .inter-img-holder {
   border: 5px solid orange;
+}
+
+.image {
+  width: 100px;
 }
 
 .balls-cont {
@@ -333,6 +338,11 @@ main section>div>div:last-of-type {
     height: 50px;
     border-radius: 50%;
     margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .image {
+    width: 50px;
   }
 
   main section div {

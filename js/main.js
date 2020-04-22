@@ -11,9 +11,12 @@ const messagesArray = Array.from(messages)
 
 let i = 0;
 let count = 0;
+let delayArrayIndex = 0;
 
 let val;
 let balVal;
+var delay = 3000;
+// localStorage.setItem("delay", delay)
 
 layoutBtn.addEventListener("click", function () {
     layoutBtn.classList.toggle("aan")
@@ -23,11 +26,26 @@ layoutBtn.addEventListener("click", function () {
     })
 })
 
-button.addEventListener("click", function () {
+ballsContGast.addEventListener('click', function () {
+    if (count == messagesArray.length - 1) {
+        delayArrayIndex = 0
+    } else {
+        delayArrayIndex++
+    }
+    console.log(delayArrayIndex)
+})
+button.addEventListener("click", function (delay) {
+    // const words = messagesArray[count].textContent.split(" ").length;
+    // console.log(words)
     if (count == 0) {
         messagesArray.forEach(item => {
             item.classList.remove("show")
         })
+        var delayArray = messagesArray.map(item => {
+            return item.textContent.split(" ").length * 200
+        })
+        console.log(delayArray)
+        var delay = delayArray[count]
     }
     if (messagesArray[count].classList.contains("interviewer")) {
         ballsContGast.classList.remove("show-balls")
@@ -43,6 +61,10 @@ button.addEventListener("click", function () {
     if (button.innerText == "Begin") {
         button.innerText = "Stop"
         val = setInterval(() => {
+            const words = messagesArray[count].textContent.split(" ").length;
+            delay = Number(words * 200)
+            // localStorage.setItem("delay", delay)
+            console.log(delay)
             if (messagesArray[count].classList.contains("interviewer")) {
                 messagesArray[count].classList.add("show")
                 messagesArray[count].scrollIntoView();
@@ -68,7 +90,9 @@ button.addEventListener("click", function () {
             } else {
                 count++
             }
+            // ballsContGast.click()
         }, 3000);
+
     } else if (button.innerText == "Stop") {
         button.innerText = "Begin"
         clearInterval(val)
