@@ -24,6 +24,11 @@ layoutBtn.addEventListener("click", function () {
 })
 
 button.addEventListener("click", function () {
+    if (count == 0) {
+        messagesArray.forEach(item => {
+            item.classList.remove("show")
+        })
+    }
     if (messagesArray[count].classList.contains("interviewer")) {
         ballsContGast.classList.remove("show-balls")
         ballsContInter.classList.add("show-balls")
@@ -50,12 +55,11 @@ button.addEventListener("click", function () {
                 messagesArray[count].scrollIntoView();
             }
             if (count == messagesArray.length - 1) {
-                messagesArray.forEach(item => {
-                    item.classList.remove("show")
-                })
                 ballsContGast.classList.remove("show-balls")
                 ballsContInter.classList.remove("show-balls")
+                clearInterval(val)
                 count = 0
+                button.innerText = "Begin"
             } else {
                 count++
             }
