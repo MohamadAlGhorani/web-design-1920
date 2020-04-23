@@ -30,7 +30,9 @@ Het idee is dat ik de interviewer en de gast altijd laten staan in het beeld en 
 
 ## Remote testen
 Testen op een afstand is lastig maar het kan en je krijgt wel goede feedback van de test persoon.
+
 Wat ik goed vind aan het testen op afstand is dat je ook de andere tests van mijn medestudenten kan zien en ervan kan leren.
+
 Wat ik minder goed vind is dat je soms het oog contact verliest met de test persoon. Daarnaast is het heel moeilijk om te observeren wat de testpersoon aan het doen is. Daarnaast gaat soms de video vastlopen dan heb je altijd een probleem met de timing die je toepast in je podacst. Die wordt dan moeilijk te testen. Natuurlijk kan je een link sturen naar de test persoon van je prototype maar dan onze testpersoon kon niet schermdelen en kan niet naar meerdere schermen teglijke tijd bekijken daarom hebben we besloten om wij de scherm te delen en dan laten zien.
 
 ## Podcast resource
