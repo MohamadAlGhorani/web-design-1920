@@ -9,8 +9,18 @@ header button {
   height: 2em;
   width: 4em;
   border-radius: 20px;
-  background-color: gray;
+  background-color: orange;
   color: white;
+}
+
+.time {
+  position: absolute;
+  left: 1px;
+  right: 1px;
+  top: 5px;
+  display: block;
+  margin: 0 auto;
+  width: 101px;
 }
 
 main {
@@ -290,6 +300,7 @@ main section>div>div:last-of-type {
     height: 4em;
     width: 8em;
     border-radius: 40px;
+    background-color: orange;
   }
 
   .layout {
@@ -308,13 +319,21 @@ main section>div>div:last-of-type {
     background-size: 25px;
   }
 
+  main section div h3 {
+    margin-top: 5px;
+  }
+
+  main section div h2 {
+    margin-bottom: 0;
+  }
+
   .aan {
     border-radius: 40px;
     height: 4em;
     width: 8em;
     background-position: 10px center;
     background-size: 25px;
-    order: 1;
+    order: -1;
   }
 
   .aan::after {
@@ -341,6 +360,7 @@ main section>div>div:last-of-type {
     border-radius: 50%;
     margin: 0 auto;
     overflow: hidden;
+    transform: scale(1.4);
   }
 
   .image {

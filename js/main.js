@@ -8,7 +8,7 @@ const messages = document.querySelectorAll("li")
 const ballsContGast = document.querySelector(".balls-cont-gast")
 const ballsContInter = document.querySelector(".balls-cont")
 const messagesArray = Array.from(messages)
-
+const timeElement = document.querySelector(".time")
 let i = 0;
 let count = 0;
 let delayArrayIndex = 0;
@@ -24,11 +24,21 @@ layoutBtn.addEventListener("click", function () {
         item.classList.toggle("uitlijnen")
     })
 })
+var delayArray = messagesArray.map(item => {
+    return item.textContent.split(" ").length * 200
+})
+var timeToRead = delayArray.reduce((current, result) => {
+    return current + result
+}) / 1000 / 60;
 
+timeElement.textContent = `Lees tijd: ${Math.floor(timeToRead)} min`
 ballsContGast.addEventListener('click', function () {
     var delayArray = messagesArray.map(item => {
         return item.textContent.split(" ").length * 200
     })
+    var timeToRead = delayArray.reduce((current, result) => {
+        return current + result
+    }) / 1000;
     clearInterval(val)
     startInterval(delayArray[delayArrayIndex]);
     if (delayArrayIndex == messagesArray.length - 1) {
