@@ -1,7 +1,8 @@
 # Web Design @cmda-minor-web 1920
 A stille podcast website voor Marie van Driessche. Marie is Doof met een hoofdletter D dus dat betekent dat Marie is Doof geboren. In deze readme kan je lezen over het concept en over het process.
 
-Screenshot here
+
+![ezgif com-video-to-gif (1)](https://user-images.githubusercontent.com/45425087/80096239-89e88a00-8569-11ea-9589-9ad39eb0afb8.gif)
 
 ## Introduction
 Ik heb een podcast gemaakt voor Marie zodat ze kan genieten van een podcast zoals iedereen.
@@ -17,6 +18,7 @@ Het idee is dat ik de interviewer en de gast altijd laten staan in het beeld en 
 ## [First meeting](https://github.com/MohamadAlGhorani/web-design-1920/wiki/First-meeting) 
 ## [Second meeting](https://github.com/MohamadAlGhorani/web-design-1920/wiki/Second-meeting)
 ## [Last meeting](https://github.com/MohamadAlGhorani/web-design-1920/wiki/Last-meeting)
+## [Design principles](https://github.com/MohamadAlGhorani/web-design-1920/wiki/Design-principles)
 
 ## Installation
 1 - Clone this repo or download it on your device.
