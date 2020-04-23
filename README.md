@@ -1,6 +1,7 @@
 # Web Design @cmda-minor-web 1920
 A stille podcast website voor Marie van Driessche. Marie is Doof met een hoofdletter D dus dat betekent dat Marie is Doof geboren. In deze readme kan je lezen over het concept en over het process.
 
+![Screen-Recording-2020-04-23-at-1](https://user-images.githubusercontent.com/45425087/80097682-f9f80f80-856b-11ea-893f-af2a3089f9ce.gif)
 
 ![ezgif com-video-to-gif (1)](https://user-images.githubusercontent.com/45425087/80096239-89e88a00-8569-11ea-9589-9ad39eb0afb8.gif)
 
