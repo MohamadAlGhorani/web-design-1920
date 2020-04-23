@@ -298,6 +298,7 @@ main section>div>div:last-of-type {
     width: 8em;
     background-position: 52px center;
     background-size: 25px;
+    order: -1;
   }
 
   .layout::after {
@@ -313,6 +314,7 @@ main section>div>div:last-of-type {
     width: 8em;
     background-position: 10px center;
     background-size: 25px;
+    order: 1;
   }
 
   .aan::after {
