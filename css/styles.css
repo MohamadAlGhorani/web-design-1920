@@ -13,11 +13,19 @@ header button {
   color: white;
 }
 
+main section div h3 {
+  margin-top: 5px;
+}
+
+main section div h2 {
+  margin-bottom: 0;
+}
+
 .time {
   position: absolute;
   left: 1px;
   right: 1px;
-  top: 5px;
+  top: 22px;
   display: block;
   margin: 0 auto;
   width: 101px;
@@ -262,6 +270,16 @@ main section>div>div:last-of-type {
     background-size: 200px;
   }
 
+  .time {
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    top: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 101px;
+  }
+
   main {
     height: auto;
     width: 100%;
@@ -296,7 +314,7 @@ main section>div>div:last-of-type {
 
   header button {
     display: block;
-    margin-top: 3em;
+    margin-top: 3.5em;
     height: 4em;
     width: 8em;
     border-radius: 40px;
