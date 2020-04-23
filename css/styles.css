@@ -279,8 +279,6 @@ main section>div>div:last-of-type {
 
   .time {
     position: absolute;
-    left: 1px;
-    right: 1px;
     top: 10px;
     display: block;
     margin: 0 auto;
